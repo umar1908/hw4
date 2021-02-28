@@ -45,8 +45,10 @@ int main(){
   shuffle(seq1.begin(),seq1.end(),g);
   copy(seq1.cbegin(),seq1.cend(),cout_it);
 
+  cout<<"\nУникальные эелементы:\n";
   auto new_end=unique(seq1.begin(),seq1.end());
   seq1.erase(new_end,seq1.end());
+  copy(seq1.cbegin(),seq1.cend(),cout_it);
 
 
   cout<<endl<<"Нечетных элементов:"<<count_if(seq1.cbegin(),seq1.cend(), [](auto elem)->bool{return elem%2!=0;})<<endl;
