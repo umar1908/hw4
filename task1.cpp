@@ -129,7 +129,6 @@ int main(){
   cout<<"между "<<*lower_bound(seq4.begin(),seq4.end(),1)<<" и "<<*upper_bound(seq4.begin(),seq4.end(),1);
 
 
-
 }
 
 
